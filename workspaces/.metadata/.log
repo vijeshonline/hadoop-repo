@@ -8281,3 +8281,51 @@ Caused by: java.net.SocketTimeoutException: Connect timed out
 	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
 	at org.eclipse.oomph.setup.internal.core.util.ECFURIHandlerImpl.createInputStream(ECFURIHandlerImpl.java:232)
 	... 10 more
+!SESSION 2016-05-03 11:10:34.047 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.7.0_80
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-05-03 11:10:43.639
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2016-05-03 12:19:17.770
+!MESSAGE Full project indexing required:
+  [+] /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar
+  [+] /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext/dnsns.jar
+  [+] /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext/icedtea-sound.jar
+  [+] /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext/localedata.jar
+  [+] /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext/sunjce_provider.jar
+  [+] /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext/sunpkcs11.jar
+  [+] /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext/zipfs.jar
+  [+] /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar
+  [+] /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar
+  [+] /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar
+  [+] /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar
+  [+] /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar
+  [+] /usr/local/hadoop/share/hadoop/common/hadoop-common-2.7.2-tests.jar
+  [+] /usr/local/hadoop/share/hadoop/common/hadoop-common-2.7.2.jar
+  [+] /usr/local/hadoop/share/hadoop/common/hadoop-nfs-2.7.2.jar
+  [+] /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.7.2.jar
+  [+] /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.7.2.jar
+  [+] /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.7.2.jar
+  [+] /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.7.2.jar
+  [+] /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.7.2.jar
+  [+] /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.2-tests.jar
+  [+] /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.2.jar
+  [+] /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.7.2.jar
+  [+] /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.2.jar
+  [+] /usr/share/java/java-atk-wrapper.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:167)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:745)

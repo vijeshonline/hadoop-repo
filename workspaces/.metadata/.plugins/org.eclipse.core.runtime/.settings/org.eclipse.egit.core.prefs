@@ -1,4 +1,4 @@
-GitRepositoriesView.GitDirectories=
-GitRepositoriesView.GitDirectories.relative=
+GitRepositoriesView.GitDirectories=/home/vijesh/hadoop-repo/.git\:
+GitRepositoriesView.GitDirectories.relative=/home/vijesh/hadoop-repo/.git\:
 core_defaultRepositoryDir=/home/vijesh/hadoop-repo
 eclipse.preferences.version=1
