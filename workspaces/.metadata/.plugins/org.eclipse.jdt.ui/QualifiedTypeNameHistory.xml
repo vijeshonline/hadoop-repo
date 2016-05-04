@@ -7,9 +7,9 @@
 <fullyQualifiedTypeName name="org.apache.hadoop.io.LongWritable"/>
 <fullyQualifiedTypeName name="org.apache.hadoop.mapreduce.Reducer"/>
 <fullyQualifiedTypeName name="javax.xml.soap.Text"/>
-<fullyQualifiedTypeName name="org.apache.hadoop.io.IntWritable"/>
 <fullyQualifiedTypeName name="org.apache.hadoop.mapred.TextInputFormat"/>
 <fullyQualifiedTypeName name="org.apache.hadoop.mapred.TextOutputFormat"/>
 <fullyQualifiedTypeName name="org.apache.hadoop.mapred.lib.NLineInputFormat"/>
 <fullyQualifiedTypeName name="org.apache.hadoop.mapreduce.lib.input.FileInputFormat"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.io.IntWritable"/>
 </qualifiedTypeNameHistroy>

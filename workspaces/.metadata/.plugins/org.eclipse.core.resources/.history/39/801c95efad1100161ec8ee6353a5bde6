@@ -1,0 +1,27 @@
+package minitemppkg;
+
+import java.io.IOException;
+import java.util.StringTokenizer;
+
+
+import org.apache.hadoop.io.Text;
+
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.mapreduce.Mapper;
+
+//<arg1=inputKey, arg2=inputValue, arg3=outputKey, arg4=outputValue>
+public class MtMapper extends Mapper<LongWritable, Text, LongWritable, IntWritable> { 
+	IntWritable one = new IntWritable(1);
+	Text word = new Text();
+	
+    public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
+        String line = value.toString();
+        StringTokenizer tokenizer = new StringTokenizer(line);
+        while (tokenizer.hasMoreTokens()) {
+            word.set(tokenizer.nextToken());
+            context.write(word, one); //goes to reducer
+        }
+    }
+
+}
