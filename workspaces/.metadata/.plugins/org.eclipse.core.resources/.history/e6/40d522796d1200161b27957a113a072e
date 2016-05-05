@@ -31,16 +31,8 @@ public class MtMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
 	public void cleanup(Context context){
 		System.out.println("\n*********CLEANUP !!!:");
 	}
-	//run is optional. given below is the default definition. Without this implementation also it works same.
-	public void run(Context context) throws IOException, InterruptedException {
-		setup(context);
-        try
-        {
-        	while (context.nextKeyValue()) {
-        		map(context.getCurrentKey(), context.getCurrentValue(), context);
-        	}
-        } finally {
-        	cleanup(context);
-		}
-	}
+//	public void run(Context context){
+//		System.out.println("\n*********RUN !!!:");
+//	}
+	
 }

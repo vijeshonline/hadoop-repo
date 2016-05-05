@@ -42,5 +42,5 @@ public class MtMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
         } finally {
         	cleanup(context);
 		}
-	}
+	}	
 }
