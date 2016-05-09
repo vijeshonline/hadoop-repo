@@ -1,0 +1,7 @@
+package minitemppkg;
+
+import org.apache.hadoop.mapred.Partitioner;
+
+public class MtPartitioner implements Partitioner<K2, V2> {
+
+}

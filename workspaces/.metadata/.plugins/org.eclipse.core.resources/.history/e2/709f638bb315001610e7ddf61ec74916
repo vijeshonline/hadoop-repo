@@ -1,0 +1,23 @@
+package minitemppkg;
+
+import java.util.Random;
+
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Partitioner;
+
+public class MtPartitioner extends Partitioner<Text, IntWritable> {
+	
+
+	@Override
+	public int getPartition(Text key, IntWritable value, int reduceTaskCount) {
+		// TODO Auto-generated method stub
+		Random rand = new Random();
+		int rd = rand.nextInt();
+		int reducer = rd % reduceTaskCount;
+		
+		System.out.println("\nREDUCER: " + reducer  + "-" +reduceTaskCount +"Key: "+key+" value: "+value);
+		return reducer;
+	}
+
+}

@@ -1,0 +1,21 @@
+package minitemppkg;
+
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Partitioner;
+
+
+
+public class MtPartitioner extends Partitioner<Text, IntWritable> {
+	public static int num = 0;
+
+	@Override
+	public int getPartition(Text key, IntWritable value, int reduceTaskCount) {
+		// TODO Auto-generated method stub
+		int reducer = num % reduceTaskCount;
+		num = num++;
+		System.out.println("\nREDUCER: " + reducer  + "-" +reduceTaskCount +"Key: "+key+" value: "+value);
+		return reducer;
+	}
+
+}
