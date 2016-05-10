@@ -36,7 +36,7 @@ public class MiniTemp {
 		job.setPartitionerClass(MtPartitioner.class);
 		job.setNumReduceTasks(1);//setting number of reduce tasks.
 		
-		job.setCombinerClass(MtCombiner.class);
+		//job.setCombinerClass(MtCombiner.class);
 		
 		job.waitForCompletion(true);
 	}

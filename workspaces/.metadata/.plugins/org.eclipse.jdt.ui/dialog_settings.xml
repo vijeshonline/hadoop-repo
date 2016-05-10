@@ -16,9 +16,6 @@
 	</section>
 	<section name="JavaElementSearchActions">
 	</section>
-	<section name="BuildPathsPropertyPage">
-		<item value="2" key="pageIndex"/>
-	</section>
 	<section name="JarPackageWizard">
 		<item value="false" key="JarPackageWizardPage.INCLUDE_DIRECTORY_ENTRIES"/>
 		<item value="true" key="JarManifestWizardPage.GENERATE_MANIFEST"/>
@@ -31,8 +28,8 @@
 		<item value="true" key="jarOptionsWizardPage.EXPORT_ERRORS"/>
 		<item value="true" key="JarPackageWizardPage.EXPORT_CLASS_FILES"/>
 		<item value="false" key="jarOptionsWizardPage.SAVE_DESCRIPTION"/>
-		<item value="false" key="JarPackageWizardPage.EXPORT_JAVA_FILES"/>
 		<item value="false" key="JarManifestWizardPage.SAVE_MANIFEST"/>
+		<item value="false" key="JarPackageWizardPage.EXPORT_JAVA_FILES"/>
 		<item value="false" key="JarPackageWizardPage.EXPORT_OUTPUT_FOLDER"/>
 		<item value="true" key="JarPackageWizardPage.COMPRESS"/>
 		<item value="true" key="jarOptionsWizardPage.BUILD_IF_NEEDED"/>
@@ -43,12 +40,8 @@
 			<item value="/home/huser/examples/wordcount.jar"/>
 		</list>
 	</section>
-	<section name="DialogBounds_SuperInterfaceSelectionDialog">
-		<item value="422" key="DIALOG_WIDTH"/>
-		<item value="-53" key="DIALOG_Y_ORIGIN"/>
-		<item value="631" key="DIALOG_HEIGHT"/>
-		<item value="119" key="DIALOG_X_ORIGIN"/>
-		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	<section name="BuildPathsPropertyPage">
+		<item value="2" key="pageIndex"/>
 	</section>
 	<section name="FatJarPackageWizard">
 		<item value="/usr/local/hadoop/examples/minitemp.jar" key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION"/>
@@ -66,11 +59,18 @@
 			<item value=".xml"/>
 		</list>
 	</section>
+	<section name="DialogBounds_SuperInterfaceSelectionDialog">
+		<item value="422" key="DIALOG_WIDTH"/>
+		<item value="-53" key="DIALOG_Y_ORIGIN"/>
+		<item value="119" key="DIALOG_X_ORIGIN"/>
+		<item value="631" key="DIALOG_HEIGHT"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="quick_assist_proposal_size">
+	</section>
 	<section name="NewClassWizardPage">
 		<item value="false" key="create_constructor"/>
 		<item value="true" key="create_unimplemented"/>
-	</section>
-	<section name="quick_assist_proposal_size">
 	</section>
 	<section name="org.eclipse.jdt.internal.ui.dialogs.OpenTypeSelectionDialog2">
 		<item value="true" key="ShowStatusLine"/>
